@@ -158,6 +158,7 @@ while True:
         cardapio_exibir()
     elif opção == 6:
         cardapio_salvar(cardapio)
+        print('Arquivo texto criado com sucesso!')
     elif opção == 7:
         print('Finalizando o sistema... Até logo!')
         break
