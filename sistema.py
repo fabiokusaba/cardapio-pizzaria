@@ -75,7 +75,7 @@ def cardapio_salvar(lista):
     for pizza in lista:
         arquivo.write(f'Pizza: {pizza};\n')
     arquivo.close()
-    # Crie uma função chamada cardapio_salvar que irá gravar todos os itens da lista cardápio em um arquivo texto, onde cada campo da pizza esteja separado por ";" e cada pizza do cardápio fique em uma linha do arquivo texto.
+    
     
 def valida_id(msg):
     while True:
