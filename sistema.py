@@ -70,9 +70,12 @@ def cardapio_exibir():
         print('Não há nenhuma pizza cadastrada.')
     
     
-def cardapio_salvar():
-    ...
-    # Adicionar funcionalidade para salvar em um arquivo texto
+def cardapio_salvar(lista):
+    arquivo = open('cardapio.txt', 'w')
+    for pizza in lista:
+        arquivo.write(f'Pizza: {pizza};\n')
+    arquivo.close()
+    # Crie uma função chamada cardapio_salvar que irá gravar todos os itens da lista cardápio em um arquivo texto, onde cada campo da pizza esteja separado por ";" e cada pizza do cardápio fique em uma linha do arquivo texto.
     
 def valida_id(msg):
     while True:
@@ -154,7 +157,7 @@ while True:
         print('-' * 30)
         cardapio_exibir()
     elif opção == 6:
-        ...
+        cardapio_salvar(cardapio)
     elif opção == 7:
         print('Finalizando o sistema... Até logo!')
         break
